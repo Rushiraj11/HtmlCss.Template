@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        
+        
+          .headerContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: tomato;
+            font-weight: bold;
+            padding: 15px;
+        }
+
+        .footerContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background-color: lightgreen;
+            font-weight: bold;
+            padding: 15px;
+        }
+
+        .mainContainer {
+            display: flex;
+            flex-flow: row wrap;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .mainContentItem {
+            text-align: left;
+            background-color: deepskyblue;
+            flex: 3 0px;
+            order: 2;
+        }
+
+        article {
+            padding: 10px;
+            margin: 10px;
+            background-color: aqua;
+        }
+        .sideBarItem {
+            flex: 1 ;
+            border: 1px solid green;
+        }
+        
+        .sideBarLeftItem {
+        
+            background-color: gold;
+            order: 1;
+        }
+
+        .sideBarRightItem {
+            background-color: hotpink;
+            order: 3;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header class="headerContainer">Header - Demo Flexbox</header>
+    <div class="mainContainer">
+        <section mainContentItem>
+          <article><h2>First Article</h2>
+            <p>BridgeLabz is an AWS recognised incubator and is solely focussed on solving tech employability. 
+                Over the last 4 years, it has worked with 500+ top tech companies and 2500+ engineers have been 
+                hired from Bridgelabz. It has labs in Mumbai and Bangalore. It has partnered with over 500+ companies, 
+                including Yatra, Capgemini, Meru Cabs, LafargeHolcim, JDA, UrbanLadder, Fullerton India, and RBL bank. 
+                BridgeLabz won Business World Techtor Award 2020 and secured 2nd position at Global Edtech Startup Awards
+                2019, India. Also, was selected by the Maharashtra state government as Top 100 Startups 2019. More than
+                250+ learners placed in the last 6 months despite covid downturn while most organizations were not hiring
+                or were laying off!</p>
+        </article>
+          <article><h2>Second Article</h2>
+            <p>BridgeLabz is an AWS recognised incubator and is solely focussed on solving tech employability. 
+                Over the last 4 years, it has worked with 500+ top tech companies and 2500+ engineers have been 
+                hired from Bridgelabz. It has labs in Mumbai and Bangalore. It has partnered with over 500+ companies, 
+                including Yatra, Capgemini, Meru Cabs, LafargeHolcim, JDA, UrbanLadder, Fullerton India, and RBL bank. 
+                BridgeLabz won Business World Techtor Award 2020 and secured 2nd position at Global Edtech Startup Awards
+                2019, India. Also, was selected by the Maharashtra state government as Top 100 Startups 2019. More than
+                250+ learners placed in the last 6 months despite covid downturn while most organizations were not hiring
+                or were laying off!</p>
+        </article>
+          <article><h2>Third Article</h2>
+            <p>BridgeLabz is an AWS recognised incubator and is solely focussed on solving tech employability. 
+                Over the last 4 years, it has worked with 500+ top tech companies and 2500+ engineers have been 
+                hired from Bridgelabz. It has labs in Mumbai and Bangalore. It has partnered with over 500+ companies, 
+                including Yatra, Capgemini, Meru Cabs, LafargeHolcim, JDA, UrbanLadder, Fullerton India, and RBL bank. 
+                BridgeLabz won Business World Techtor Award 2020 and secured 2nd position at Global Edtech Startup Awards
+                2019, India. Also, was selected by the Maharashtra state government as Top 100 Startups 2019. More than
+                250+ learners placed in the last 6 months despite covid downturn while most organizations were not hiring
+                or were laying off!</p>
+        </article>
+        </section>
+   
+    <sidebar class ="sideBarItem sideBarLeftItem">Left Side Bar </sidebar>
+    <sidebar class ="sideBarItem sideBarRightItem">Right Side Bar </sidebar>
+</div>
+    <footer class="footerContainer">Footer</footer>
+
+</body>
+</html>
